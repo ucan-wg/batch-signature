@@ -12,3 +12,8 @@ type Authored struct {
   iss DID
   pld Any
 }
+
+type BinaryTreeSig struct {
+  l &Any
+  r &Any
+} representation tuple
