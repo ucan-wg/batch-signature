@@ -7,3 +7,8 @@ type BatchSignature struct {
   scp [&Any]
   sig Bytes
 }
+
+type Authored struct {
+  iss DID
+  pld Any
+}
