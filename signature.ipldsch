@@ -13,7 +13,14 @@ type Authored struct {
   pld Any
 }
 
+NOTE TO SELF: just use blake3
+
 type BinaryTreeSig struct {
-  l &Any
-  r &Any
+  l &BinaryTreeSigNode
+  r &BinaryTreeSigNode
 } representation tuple
+
+type BinaryTreeSigNode union {
+  | tree BinaryTreeSig
+  | leaf &Any
+}
